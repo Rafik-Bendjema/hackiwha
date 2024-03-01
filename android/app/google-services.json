@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "712408194460",
+    "project_id": "hackiwhaa",
+    "storage_bucket": "hackiwhaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712408194460:android:6f8d651773051abcdffc59",
+        "android_client_info": {
+          "package_name": "com.example.hackiwha"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKDI05olIdnDWbvRtHJxBKreaVkPeCsDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
