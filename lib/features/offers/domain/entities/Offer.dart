@@ -7,11 +7,13 @@ class Offer {
   String user_id;
   String description;
   bool isAvailable;
+  double price;
 
   Offer(
       {required this.date,
       required this.description,
       required this.user_id,
+      required this.price,
       this.isAvailable = true}) {
     id = uuid.v1();
   }
@@ -22,6 +24,8 @@ class Offer {
       'date': date.toIso8601String(),
       'user_id': user_id,
       'description': description,
+      'isAvailable': isAvailable,
+      'price': price
     };
   }
 }

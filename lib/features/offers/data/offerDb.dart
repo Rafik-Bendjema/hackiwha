@@ -34,8 +34,12 @@ class OfferDb_impl implements OfferDb {
   }
 
   @override
-  Future<bool> validateOffer(Offer o) {
-    // TODO: implement validateOffer
-    throw UnimplementedError();
+  Future<bool> validateOffer(Offer o) async {
+    try {
+      await db.collection("offers").doc(o.id).update({'isAvailable': false});
+      return true;
+    } catch (e) {
+      return false;
+    }
   }
 }

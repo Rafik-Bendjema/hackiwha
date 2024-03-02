@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackiwha/features/auth/presentation/signup.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -33,6 +34,17 @@ class LoginPage extends StatelessWidget {
               },
               child: const Text('Login'),
             ),
+            const SizedBox(
+              height: 40,
+            ),
+            TextButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const SignupPage()));
+                },
+                child: const Text("You don't have account ? signup"))
           ],
         ),
       ),
